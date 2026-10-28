@@ -19,3 +19,6 @@ Upload the *contents* of this directory to repository root (including folders) o
 - Confirm original menu spreadsheet tab mapping and presentation rules.
 - YouTube errors are not guaranteed detectable in a bare cross-origin iframe; future iteration can use the YouTube Player API and an explicit live-channel refresh process.
 - The full-screen tiki character is a static prototype built from the previously generated idol art; future work can add mouth/eye layers and audio.
+
+
+v0.3 update: screen 1 now uses assets/rose_cove_night_background.png as its full-bleed 1080x1920 canvas background (image aspect ratio closely matches canvas). The separate hero overlay was removed. Other screens and scripts are unchanged.
