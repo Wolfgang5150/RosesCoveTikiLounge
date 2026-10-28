@@ -1,3 +1,9 @@
+# Rose's Cove Tiki Lounge v2.5
+
+New on Screen 2: independently adjust each dashed video viewport with Frame left (X), Frame top (Y), Frame width, and Frame height controls. These reposition the window and alignment guide; the video inside maintains proportional scaling, and existing independent image zoom/crop controls remain available. Reset Frame restores the original artwork-aligned rectangle separately from Reset Video Image. Settings persist using the existing Save & Close control in Chrome.
+
+Native design canvas remains 1080 × 1920. All other screens and camera rotation logic are unchanged.
+
 # Rose’s Cove Tiki Lounge — v2.4
 
 Complete static website for GitHub Pages. Keep `index.html` at the repository root.

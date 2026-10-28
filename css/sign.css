@@ -222,3 +222,10 @@
 #screen-live.video-guides .dual-cam::after{content:'';position:absolute;inset:0;border:3px dashed rgba(55,255,235,.8);z-index:6;pointer-events:none;}
 #screen-live.video-guides[data-tuning-video="0"] .cam-b::after,
 #screen-live.video-guides[data-tuning-video="1"] .cam-a::after{border-color:rgba(255,255,255,.35);border-width:1px;}
+
+/* v2.5: viewport position/size controlled by independent Screen 2 settings sliders. */
+#settings .video-slider-row{gap:10px;}
+#settings .video-slider-row input[type=range]{min-width:170px;}
+#settings #video-slider-fields h4{font-size:16px;margin:8px 0 2px;color:#ffd09b;}
+#settings #video-slider-fields>p{font-size:13px;line-height:1.25;margin:0 0 5px;}
+#settings .video-tuning-actions{flex-wrap:wrap;}
