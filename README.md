@@ -37,3 +37,9 @@ The four-item menu defaults were already correct in v1.1 HTML and JS, but index.
 - Changes preview live. Save & Close persists to local browser storage; X/Escape restores the prior settings. Reset Menu Adjustments resets to 60px/0px.
 - Font auto-fit can shrink items if needed to stay within the designated menu region. No horizontal or vertical scaling is applied.
 - Other screens and their source files are unchanged.
+
+
+## v1.4 — settings panel position
+- Settings are constrained to the upper 960 px of the fixed 1080×1920 design canvas.
+- The settings content scrolls internally; the lower menu stays uncovered for live visual tuning.
+- Existing sliders and save behavior unchanged; other screens and files unchanged.
