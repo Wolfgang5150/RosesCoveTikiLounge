@@ -24,3 +24,6 @@ Select Screen 2 in the hidden settings to navigate to the camera page and adjust
 - Both caption lines scale in unison, retaining 29:23 size ratio with no horizontal or vertical stretching.
 - Immediate preview, Save & Close persistence and Cancel restoration via existing settings workflow.
 - All other screens, video frame/crop controls and source feeds unchanged.
+
+
+v2.8: Screen 2 weather information (city, icon, temperature, condition) enlarged 60%; Screen 1 ticker now white with black offset shadow; menu lettering 85% opacity without text shadow; independent saved durations for all three screens under General. Original screen-time value is retained for backward compatibility; individual values take precedence.

@@ -242,3 +242,13 @@
 /* v2.7: Scale each camera name and location together; natural font aspect ratios. */
 #screen-live .dual-label .cam-name{font-size:var(--cam-caption-name-size,29px);}
 #screen-live .dual-label .cam-place{font-size:var(--cam-caption-place-size,23px);}
+
+/* v2.8: requested visual changes. No changes to background or layout geometry. */
+#screen-live .weather-info{gap:15px;margin-top:24px;}
+#screen-live .weather-info #weather-icon{font-size:144px;line-height:1;}
+#screen-live .weather-info strong#weather-place{font-size:73.6px;line-height:1.06;}
+#screen-live .weather-info small#weather-description{font-size:40px;line-height:1.12;margin-top:5px;}
+#screen-live .weather-info strong#weather-temp{font-size:124.8px;line-height:1;}
+#screen-menu .ticker-copy{color:#fff;text-shadow:3px 4px 1px #000,5px 6px 3px rgba(0,0,0,.7);}
+#screen-menu .menu-items,#screen-menu .menu-panel h2{opacity:.85;text-shadow:none;background:none;filter:none;}
+#screen-menu .menu-entry{background:none;box-shadow:none;}
