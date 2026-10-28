@@ -34,3 +34,6 @@ Screen 2 settings now include Weather size (50–180%, uniform), horizontal (±2
 
 ## v3.0
 Halved the baseline Screen 2 weather icon, city, temperature and condition font sizes. Existing weather size/position slider ranges and controls are unchanged, as are saved browser preferences. Refresh browser to load updated stylesheet.
+
+## v3.1
+Screen 2 weather readout is center anchored and automatically fits within a strict 25% inset on every edge of the translucent weather-card (inner 50% rectangle). The existing uniform scale and X/Y sliders remain, but their effective adjustments are safely bounded. New weather text automatically refits whenever the forecast changes. Other screens unchanged.

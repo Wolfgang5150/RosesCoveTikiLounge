@@ -265,3 +265,21 @@
 #settings .weather-tuning input[type=range] {width:210px;}
 #settings .weather-tuning output {font-size:18px;}
 #settings .weather-tuning button {font-size:18px;padding:7px 10px;margin-top:8px;}
+
+
+/* v3.1: Weather content centered within the inner 50% of its translucent panel.
+   Text and emoji scale together, never disproportionately. */
+#screen-live .weather-card{position:absolute;}
+#screen-live .weather-info{
+  position:absolute;
+  left:50%;top:50%;
+  width:max-content;max-width:none;
+  height:max-content;
+  margin:0;
+  display:flex;align-items:center;
+  white-space:nowrap;
+  transform-origin:center center;
+  transform:translate(-50%,-50%) translate(var(--weather-offset-x,0px),var(--weather-offset-y,0px)) scale(var(--weather-fit-scale,1));
+}
+#screen-live .weather-info > div{flex:none;min-width:0;}
+#screen-live .weather-info strong,#screen-live .weather-info small{white-space:nowrap;}
