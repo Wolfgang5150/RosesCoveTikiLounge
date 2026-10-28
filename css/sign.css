@@ -27,3 +27,19 @@
 /* v1.1: Larger four-item menus; unchanged board geometry and vertical limits. */
 #screen-menu .menu-items {font-size:60px; line-height:1.16;}
 #screen-menu .menu-items .menu-entry {padding:2px 0;}
+
+/* v1.3 — Screen 1 only: natural-proportion heavy sans serif menu. */
+#screen-menu .menu-panel h2, #screen-menu .menu-items {font-family:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;font-stretch:normal;font-weight:800;}
+#screen-menu .menu-panel h2 {font-size:66px;letter-spacing:1px;}
+#screen-menu .menu-items {line-height:1.12;letter-spacing:0;overflow-wrap:normal;}
+#screen-menu .menu-panel {transition:opacity .45s ease, visibility .45s ease; }
+/* Scroll only the settings sheet, not the 1080x1920 sign. */
+.settings-inner {max-height:88%;overflow-y:auto;}
+.menu-tuning {border-top:2px solid #865224;margin-top:22px;padding-top:18px;}
+.menu-tuning h3 {font:700 30px Arial,sans-serif;color:#f2c281;margin:0 0 8px;}
+.menu-tuning p {margin:0 0 12px;font:21px/1.3 Arial,sans-serif;color:#d2b997;}
+.menu-tuning label {gap:20px;}
+.menu-tuning label span {display:flex;flex-direction:column;gap:6px;flex:1;font-size:24px;}
+.menu-tuning output {font-size:20px;color:#efc68f;}
+.menu-tuning input[type=range] {width:320px;accent-color:#e8a24b;cursor:pointer;}
+#reset-menu-tuning {font-size:19px;padding:10px 16px;margin-top:14px;}

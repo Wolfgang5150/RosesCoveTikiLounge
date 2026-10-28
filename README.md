@@ -29,3 +29,11 @@ Four fixed entries per section, larger type fitted inside the existing menu fram
 
 ## v1.2 menu correction
 The four-item menu defaults were already correct in v1.1 HTML and JS, but index.html referenced sign.js?v=0.9. The active script is now js/sign-v1.2.js, avoiding reuse of an older cached menu loader. Other behavior remains unchanged.
+
+
+## v1.3 — Barlow Semi Condensed and menu positioning controls
+- Screen 1 menu headings and items use natural-proportion Barlow Semi Condensed at weight 800 (loaded via Google Fonts, with local sans-serif fallback).
+- Hidden settings (click version) now include independent Drinks and Food font-size and vertical offset sliders.
+- Changes preview live. Save & Close persists to local browser storage; X/Escape restores the prior settings. Reset Menu Adjustments resets to 60px/0px.
+- Font auto-fit can shrink items if needed to stay within the designated menu region. No horizontal or vertical scaling is applied.
+- Other screens and their source files are unchanged.
