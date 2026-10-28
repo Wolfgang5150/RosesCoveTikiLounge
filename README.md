@@ -25,3 +25,7 @@ The five default Drinks and five default Food entries are shown immediately and 
 
 ## v1.1 screen 1 menu
 Four fixed entries per section, larger type fitted inside the existing menu frame. Existing spreadsheet announcements stay connected, but the drinks/food spreadsheet feeds no longer override the specified fixed lists.
+
+
+## v1.2 menu correction
+The four-item menu defaults were already correct in v1.1 HTML and JS, but index.html referenced sign.js?v=0.9. The active script is now js/sign-v1.2.js, avoiding reuse of an older cached menu loader. Other behavior remains unchanged.
