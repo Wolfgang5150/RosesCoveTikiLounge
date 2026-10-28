@@ -174,3 +174,14 @@
 #screen-live .dual-label-b{top:1508px;}
 #screen-live .dual-label .cam-name{font-size:29px;line-height:1.05;}
 #screen-live .dual-label .cam-place{font-size:23px;line-height:1.07;}
+
+/* v2.2 — Screen 2: new natural-bamboo artwork. Other screens untouched. */
+#screen-live{background-image:url("../assets/live_from_islands_background.png");background-position:center center;background-size:1080px 1920px;}
+#screen-live .dual-cam{left:160px;width:760px;border:0;border-radius:0;overflow:hidden;}
+#screen-live .cam-a{top:475px;height:350px;}
+#screen-live .cam-b{top:1055px;height:355px;}
+#screen-live .dual-label{left:245px;width:590px;height:75px;padding:0 8px;align-items:center;justify-content:center;text-align:center;}
+#screen-live .dual-label-a{top:892px;}
+#screen-live .dual-label-b{top:1475px;}
+#screen-live .dual-label .cam-name{font-size:29px;line-height:1.06;}
+#screen-live .dual-label .cam-place{font-size:23px;line-height:1.08;}

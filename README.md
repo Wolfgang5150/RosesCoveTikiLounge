@@ -1,9 +1,7 @@
-Rose's Cove Tiki Lounge v2.0
-1080 x 1920 portrait.
-Changes: screen-specific compact settings tabs; ticker text & size persistent in Chrome; adjustable two camera captions; eight supplied YouTube IDs in pairs.
-Sources are user-supplied links; YouTube may still block embedding or a livestream may be offline.
-To publish: upload full archive contents (not ZIP) to GitHub repository root.
+# Rose’s Cove Tiki Lounge — v2.2
 
+Screen 2 only: new natural-bamboo background, video windows and name/location plaques repositioned. Fixed 1080 × 1920 design canvas. Existing eight YouTube feeds, rotation and caption-position settings retained.
 
-## v2.1
-Screen 2 only: replaced background with supplied 1080x1920 artwork, aligned both video mounts to black panels, and aligned captions to the two wooden plaques. Caption offset settings and all other scripts remain unchanged.
+Extract all files into the GitHub Pages repository root. Include `assets/live_from_islands_background.png` and updated `css/sign.css`; `index.html` uses `sign.css?v=2.2` to avoid stale cached layouts.
+
+Video feeds may still have external YouTube embedding/autoplay limits.
