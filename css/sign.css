@@ -96,3 +96,30 @@
 .menu-editor .menu-title-edit{display:flex;flex-direction:column;align-items:stretch;gap:5px;border:0;padding:7px 0 12px;}
 .menu-editor .menu-title-edit span{font:700 18px Arial,sans-serif;color:#f7c989;}
 .menu-editor .menu-title-edit input{width:100%;min-width:0;box-sizing:border-box;padding:9px;background:#34291e;color:#fff0cc;border:1px solid #9b7249;border-radius:5px;font:20px Arial,sans-serif;}
+
+/* v1.8: Screen 1 ticker typography — natural Barlow proportions */
+#screen-menu .ticker-copy{font-family:"Barlow Semi Condensed",Arial,sans-serif;font-weight:800;font-size:45px;letter-spacing:.2px;color:#f6d7a4;}
+/* v1.8: Screen 2 background with precise video windows from supplied artwork.
+   Native image ratio 941:1672; canvas ratio 1080:1920; proportional cover only. */
+#screen-live{padding:0;background:#102f40 url("../assets/live_from_islands_background.png") center center / cover no-repeat;}
+#screen-live::before{display:none;}
+#screen-live .dual-cam{position:absolute;left:16.15%;width:69.9%;height:17.2%;overflow:hidden;background:#020302;z-index:2;}
+#screen-live .cam-a{top:25.65%;}
+#screen-live .cam-b{top:51.82%;}
+#screen-live .dual-cam-player{position:absolute;inset:0;}
+#screen-live .dual-cam-fallback{position:absolute;inset:0;display:none;justify-content:center;align-items:center;flex-direction:column;text-align:center;padding:25px;background:#071a1f;color:#f4d9a8;font:700 34px "Barlow Semi Condensed",Arial,sans-serif;}
+#screen-live .dual-cam-fallback.visible{display:flex;}
+#screen-live .dual-cam-fallback small{display:block;font-size:22px;margin-top:10px;}
+#screen-live .dual-cam-fallback a{font-size:22px;color:#fff4d5;margin-top:10px;}
+#screen-live .dual-cam-fallback.source-hint{pointer-events:none;opacity:0;}
+#screen-live .dual-label{position:absolute;left:23%;width:54%;height:4.0%;display:flex;align-items:center;justify-content:center;text-align:center;z-index:3;color:#3f1e0b;font:900 32px/1.07 "Barlow Semi Condensed",Arial,sans-serif;text-shadow:0 1px 0 #ffe0a0;overflow:hidden;}
+#screen-live .dual-label-a{top:44.05%;}
+#screen-live .dual-label-b{top:70.0%;}
+/* Keep the existing weather component and logic but integrate it with the beach art */
+#screen-live .weather-card{left:11%;right:11%;bottom:4.5%;height:210px;border:4px solid rgba(189,128,51,.9);background:rgba(4,25,35,.83);padding:15px 22px;border-radius:16px;}
+#screen-live .weather-head{font-size:21px;}
+#screen-live .weather-info{margin-top:12px;gap:18px;}
+#screen-live .weather-info #weather-icon{font-size:52px;}
+#screen-live .weather-info strong{font-size:34px;}
+#screen-live .weather-info #weather-temp{font-size:54px;}
+#screen-live .weather-info small{font-size:22px;margin-top:4px;}

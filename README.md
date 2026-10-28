@@ -60,3 +60,10 @@ Removed Screen 1 menu auto-shrink/clamping and CSS overflow clipping. Fonts main
 ## v1.7 changes
 - Editable Food and Drinks heading text in settings (live preview, saved with existing browser settings).
 - Both menu headings now display white; sizing remains 110% of the corresponding menu item font size.
+
+
+## v1.8 changes
+- Screen 1: fixed Halloween announcement in Barlow Semi Condensed matching menu. Existing spreadsheet announcement overrides intentionally bypassed for this release.
+- Screen 2: supplied portrait artwork, two simultaneous sources, two location plaques, next pair on each screen entry; existing weather updater retained.
+- Webcam embed audit: Maui Sands and Banzai Pipeline have directly identifiable YouTube player IDs. Six remaining sources are their supplied GeoWebcams pages, whose embed permissions and raw IDs could not be verified. Such pages may be blocked in iframes; these entries require later direct video ID verification.
+- Screen 3 and menu settings unchanged.
