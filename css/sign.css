@@ -23,3 +23,7 @@
 #screen-menu .menu-panel h2 {font-family:Georgia, 'Trebuchet MS', serif; font-weight:900; font-size:62px; line-height:1.1; letter-spacing:2px; color:rgba(255,220,159,.93); text-align:center; margin:0 0 12px; padding:0; text-shadow:2px 3px 2px rgba(35,14,3,.9),0 0 2px rgba(32,12,3,.65);}
 #screen-menu .menu-items {font-family:'Trebuchet MS',Georgia,serif; font-weight:900; font-size:48px; line-height:1.18; letter-spacing:.2px; color:rgba(255,229,179,.9); text-align:center; white-space:normal; overflow-wrap:break-word; word-break:normal; text-shadow:2px 3px 2px rgba(32,12,3,.9),0 0 2px rgba(28,12,3,.45); max-height:none; padding:0;}
 #screen-menu .menu-items .menu-entry {display:block; padding:1px 0; white-space:normal;}
+
+/* v1.1: Larger four-item menus; unchanged board geometry and vertical limits. */
+#screen-menu .menu-items {font-size:60px; line-height:1.16;}
+#screen-menu .menu-items .menu-entry {padding:2px 0;}

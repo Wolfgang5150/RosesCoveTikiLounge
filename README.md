@@ -21,3 +21,7 @@ The five default Drinks and five default Food entries are shown immediately and 
 - Moved only the menu-board down by 48 design pixels (1235px to 1283px).
 - Updated the stylesheet query parameter to prevent stale CSS caching, and visible version label to v1.0.
 - All other layout rules, scripts, assets and feeds are unchanged.
+
+
+## v1.1 screen 1 menu
+Four fixed entries per section, larger type fitted inside the existing menu frame. Existing spreadsheet announcements stay connected, but the drinks/food spreadsheet feeds no longer override the specified fixed lists.
