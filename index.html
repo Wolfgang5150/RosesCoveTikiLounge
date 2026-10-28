@@ -4,7 +4,7 @@
 <div id="viewport"><main id="sign" aria-label="Rose's Cove vertical digital sign">
 <section class="screen selected" id="screen-menu" aria-label="Welcome and menu">
   <div class="shade"></div><div class="menu-top"><div id="clock"></div></div>
-  <div class="menu-board"><div class="menu-heading">THE TIKI BAR</div><div class="menu-columns"><div class="menu-panel"><h2>DRINKS</h2><div id="drinks" class="menu-items">Mai Tai<br>Zombie<br>Rum Punch<br>Blue Hawaii</div></div><div class="menu-panel"><h2>FOOD</h2><div id="food" class="menu-items">Island Bites<br>House Specials<br>Something Delicious</div></div></div><div class="menu-notice">Good drinks • Good friends • Better times</div></div>
+  <div class="menu-board"><div class="menu-columns"><div class="menu-panel"><h2>DRINKS</h2><div id="drinks" class="menu-items">Mai Tai<br>Zombie<br>Rum Punch<br>Blue Hawaii</div></div><div class="menu-panel"><h2>FOOD</h2><div id="food" class="menu-items">Island Bites<br>House Specials<br>Something Delicious</div></div></div></div>
   <div class="ticker-frame"><div class="ticker" id="ticker"><span class="ticker-copy">ALOHA FROM ROSE'S COVE • WELCOME TO PARADISE •</span><span class="ticker-copy" aria-hidden="true">ALOHA FROM ROSE'S COVE • WELCOME TO PARADISE •</span></div></div>
 </section>
 <section class="screen" id="screen-live" aria-label="Live from the islands">
@@ -18,7 +18,7 @@
   <div class="idol-altar"><div class="idol-aura"></div><img src="./assets/tiki_idol.png" class="idol" alt="Carved tiki idol, future animated host"><div class="idol-caption">THE KEEPER OF ISLAND SECRETS</div></div>
   <div class="fact-card"><div class="fact-type" id="fact-type">TIKI CULTURE</div><div class="fact-content" id="fact-text">A little island wisdom is coming your way…</div><div class="fact-foot">The tiki has spoken. 🌺</div></div>
 </section>
-<button id="version" title="Open sign settings">v0.3</button>
+<button id="version" title="Open sign settings">v0.4</button>
 <div id="settings" class="settings hidden" role="dialog" aria-label="Rose's Cove sign settings" aria-modal="true"><div class="settings-inner"><div class="settings-title">⚙ SIGN SETTINGS <button id="close-settings">✕</button></div><label><span>Automatic screen rotation</span><input id="auto-rotate" type="checkbox" checked></label><label><span>Screen time (seconds)</span><input type="number" id="screen-time" min="5" max="300" value="25"></label><label><span>Trivia rotation (seconds)</span><input type="number" id="fact-time" min="5" max="300" value="12"></label><label><span>Weather location rotation (seconds)</span><input type="number" id="weather-time" min="5" max="300" value="12"></label><label><span>Announcement speed (pixels/second)</span><input type="number" id="ticker-speed" min="20" max="500" value="95"></label><div class="settings-actions"><button id="prev-screen">← PREV</button><button id="next-screen">NEXT →</button><button id="save-settings">SAVE & CLOSE</button></div><p>Settings are saved in this browser. Arrow keys also change screens. This menu is hidden until the version number is clicked.</p></div></div>
 </main></div>
 <script src="./js/data.js"></script><script src="./js/sign.js"></script>

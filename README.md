@@ -22,3 +22,7 @@ Upload the *contents* of this directory to repository root (including folders) o
 
 
 v0.3 update: screen 1 now uses assets/rose_cove_night_background.png as its full-bleed 1080x1920 canvas background (image aspect ratio closely matches canvas). The separate hero overlay was removed. Other screens and scripts are unchanged.
+
+
+## v0.4
+Screen 1 only: removed artificial menu overlay and header/notice. Food and Drinks retain their spreadsheet-fed IDs, with transparent painted-text styling over the built-in wooden sign. Screen 2/3, JavaScript, assets, ticker and settings are unchanged except the visible version number.
