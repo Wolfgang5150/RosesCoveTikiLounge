@@ -49,9 +49,14 @@ The four-item menu defaults were already correct in v1.1 HTML and JS, but index.
 Removed Screen 1 menu auto-shrink/clamping and CSS overflow clipping. Fonts maintain natural proportions. Menu sizing and vertical offset are now controlled directly by the separate Drinks/Food sliders; long text may extend beyond the wooden panel or canvas (by design). All other screens remain unchanged.
 
 
-## v1.6 changes
+## v1.7 changes
 - Five individually editable menu slots for each menu in Settings. Blank slots are hidden.
 - Menu editing previews immediately and is saved locally in Chrome when Save & Close is clicked. Closing without saving restores earlier items.
 - DRINKS and FOOD headings are 110% of each menu's slider-selected item font size (proportional font sizing, no stretching).
 - Preview buttons let you show either menu while settings are open.
 - All three screens and other site logic remain as in v1.5.
+
+
+## v1.7 changes
+- Editable Food and Drinks heading text in settings (live preview, saved with existing browser settings).
+- Both menu headings now display white; sizing remains 110% of the corresponding menu item font size.

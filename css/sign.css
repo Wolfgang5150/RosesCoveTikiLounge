@@ -90,3 +90,9 @@
 .menu-editor .menu-editor-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #563e28;}
 .menu-editor .menu-editor-row span{flex:0 0 18px;font:20px Arial,sans-serif;}
 .menu-editor .menu-editor-row input{min-width:0;width:100%;box-sizing:border-box;padding:9px 8px;background:#34291e;color:#fff0cc;border:1px solid #9b7249;border-radius:5px;font:18px Arial,sans-serif;}
+
+/* v1.7: white menu headings; no changes to text size or natural proportions. */
+#screen-menu .menu-panel h2{color:#fff;}
+.menu-editor .menu-title-edit{display:flex;flex-direction:column;align-items:stretch;gap:5px;border:0;padding:7px 0 12px;}
+.menu-editor .menu-title-edit span{font:700 18px Arial,sans-serif;color:#f7c989;}
+.menu-editor .menu-title-edit input{width:100%;min-width:0;box-sizing:border-box;padding:9px;background:#34291e;color:#fff0cc;border:1px solid #9b7249;border-radius:5px;font:20px Arial,sans-serif;}
