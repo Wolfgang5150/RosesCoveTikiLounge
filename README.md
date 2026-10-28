@@ -1,5 +1,7 @@
-Rose's Cove Tiki Lounge v0.6
+Rose’s Cove Tiki Lounge v0.7
 
-Fix: forces Chrome to load the corrected menu stylesheet using a versioned CSS URL, and hides the Screen 1 clock inline as a safeguard. The menu remains restricted to the wooden sign interior using the v0.5 stylesheet. No changes to other screens or JavaScript.
+Based directly on v0.6. Added a floating, translucent full-screen toggle near the upper-right corner. Click to enter or exit full screen; Escape also exits. The control lives outside the 1080 × 1920 sign canvas so it does not shift or resize screen content.
 
-Upload the extracted files to the root of the GitHub repository, preserving folders. To test, reload the GitHub Pages site; optionally use Chrome hard refresh (Cmd+Shift+R).
+Unchanged from v0.6: all three screen layouts, sheet feeds, webcam/weather/trivia code, settings, image assets, and fixed sign dimensions.
+
+Upload extracted ZIP contents to the root of your GitHub Pages repository.

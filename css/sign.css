@@ -9,3 +9,8 @@
 #screen-menu .menu-panel{min-width:0;padding:0;margin:0;overflow:hidden;}
 #screen-menu .menu-panel h2{font-size:43px;line-height:1.12;padding:0 0 8px;margin:0 0 4px;letter-spacing:1px;}
 #screen-menu .menu-items{font-size:32px;line-height:1.26;white-space:pre-line;overflow-wrap:anywhere;word-break:normal;overflow:hidden;max-height:365px;padding:0 0 2px;}
+
+/* v0.7: development preview control, outside the fixed 1080x1920 sign canvas. */
+#fullscreen-toggle{position:absolute;right:14px;top:14px;z-index:60;min-width:45px;min-height:45px;border:1px solid rgba(255,225,169,.35);border-radius:12px;background:rgba(4,9,12,.37);color:rgba(255,238,209,.85);font:28px/1 Arial,sans-serif;display:flex;align-items:center;justify-content:center;padding:6px;cursor:pointer;opacity:.62;transition:opacity .18s ease,background .18s ease;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+#fullscreen-toggle:hover,#fullscreen-toggle:focus-visible{opacity:1;background:rgba(3,7,10,.72);outline:2px solid rgba(255,226,153,.45);outline-offset:1px}
+#viewport:fullscreen{width:100vw;height:100vh;background:#000}
