@@ -26,4 +26,8 @@ Select Screen 2 in the hidden settings to navigate to the camera page and adjust
 - All other screens, video frame/crop controls and source feeds unchanged.
 
 
-v2.8: Screen 2 weather information (city, icon, temperature, condition) enlarged 60%; Screen 1 ticker now white with black offset shadow; menu lettering 85% opacity without text shadow; independent saved durations for all three screens under General. Original screen-time value is retained for backward compatibility; individual values take precedence.
+v2.9: Screen 2 weather information (city, icon, temperature, condition) enlarged 60%; Screen 1 ticker now white with black offset shadow; menu lettering 85% opacity without text shadow; independent saved durations for all three screens under General. Original screen-time value is retained for backward compatibility; individual values take precedence.
+
+
+## v2.9 Weather controls
+Screen 2 settings now include Weather size (50–180%, uniform), horizontal (±200px), and vertical (±150px) with a reset button. Adjustments preview immediately and persist with Save & Close. The 1080×1920 canvas and other screens remain unchanged.

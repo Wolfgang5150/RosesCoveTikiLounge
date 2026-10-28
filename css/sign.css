@@ -252,3 +252,16 @@
 #screen-menu .ticker-copy{color:#fff;text-shadow:3px 4px 1px #000,5px 6px 3px rgba(0,0,0,.7);}
 #screen-menu .menu-items,#screen-menu .menu-panel h2{opacity:.85;text-shadow:none;background:none;filter:none;}
 #screen-menu .menu-entry{background:none;box-shadow:none;}
+
+/* v2.9 Weather readout controls: uniform scaling, no distortion. */
+#screen-live .weather-info{
+ transform:translate(var(--weather-offset-x,0px),var(--weather-offset-y,0px)) scale(var(--weather-scale,1));
+ transform-origin:center center;
+}
+#settings .weather-tuning {border-bottom:1px solid rgba(190,140,70,.5);padding:4px 0 12px;}
+#settings .weather-tuning h3 {font-size:23px;margin:8px 0;}
+#settings .weather-tuning p {font-size:17px;margin:6px 0;color:#ddc09c;}
+#settings .weather-tuning label {font-size:19px;padding:6px 0;}
+#settings .weather-tuning input[type=range] {width:210px;}
+#settings .weather-tuning output {font-size:18px;}
+#settings .weather-tuning button {font-size:18px;padding:7px 10px;margin-top:8px;}
