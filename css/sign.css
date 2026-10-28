@@ -14,3 +14,12 @@
 #fullscreen-toggle{position:absolute;right:14px;top:14px;z-index:60;min-width:45px;min-height:45px;border:1px solid rgba(255,225,169,.35);border-radius:12px;background:rgba(4,9,12,.37);color:rgba(255,238,209,.85);font:28px/1 Arial,sans-serif;display:flex;align-items:center;justify-content:center;padding:6px;cursor:pointer;opacity:.62;transition:opacity .18s ease,background .18s ease;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
 #fullscreen-toggle:hover,#fullscreen-toggle:focus-visible{opacity:1;background:rgba(3,7,10,.72);outline:2px solid rgba(255,226,153,.45);outline-offset:1px}
 #viewport:fullscreen{width:100vw;height:100vh;background:#000}
+
+/* v0.8: Screen 1 menu only. Single section displayed within the unobstructed wood. */
+#screen-menu .menu-board {top:1235px; left:240px; right:240px; bottom:auto; height:440px; padding:0; overflow:hidden; background:none; border:0; box-shadow:none;}
+#screen-menu .menu-columns {display:block; position:relative; width:100%; height:100%;}
+#screen-menu .menu-panel {position:absolute; inset:0; box-sizing:border-box; padding:0 4px; margin:0; overflow:hidden; opacity:0; visibility:hidden; transition:opacity .45s ease,visibility .45s ease;}
+#screen-menu .menu-panel.menu-active {opacity:1; visibility:visible;}
+#screen-menu .menu-panel h2 {font-family:Georgia, 'Trebuchet MS', serif; font-weight:900; font-size:62px; line-height:1.1; letter-spacing:2px; color:rgba(255,220,159,.93); text-align:center; margin:0 0 12px; padding:0; text-shadow:2px 3px 2px rgba(35,14,3,.9),0 0 2px rgba(32,12,3,.65);}
+#screen-menu .menu-items {font-family:'Trebuchet MS',Georgia,serif; font-weight:900; font-size:48px; line-height:1.18; letter-spacing:.2px; color:rgba(255,229,179,.9); text-align:center; white-space:normal; overflow-wrap:break-word; word-break:normal; text-shadow:2px 3px 2px rgba(32,12,3,.9),0 0 2px rgba(28,12,3,.45); max-height:none; padding:0;}
+#screen-menu .menu-items .menu-entry {display:block; padding:1px 0; white-space:normal;}
