@@ -161,3 +161,16 @@
 #settings .menu-editor-grid{gap:8px;}
 #settings .menu-editor-row{padding:3px 0;}
 #screen-live .dual-cam-fallback:not(.visible){display:none!important;}
+
+/* v2.1 — Screen 2 only: fit NEW native 1080x1920 illustrated frames.
+   All dimensions are canvas pixels; player and plaque dimensions are independent. */
+#screen-live{background-size:1080px 1920px;background-position:center center;}
+#screen-live .dual-cam{left:160px;width:764px;}
+#screen-live .cam-a{top:480px;height:430px;}
+#screen-live .cam-b{top:1080px;height:405px;}
+#screen-live .dual-cam-player,#screen-live .dual-cam-player iframe{width:100%;height:100%;display:block;}
+#screen-live .dual-label{left:250px;width:580px;height:70px;padding:0;line-height:1.06;white-space:normal;overflow:visible;}
+#screen-live .dual-label-a{top:928px;}
+#screen-live .dual-label-b{top:1508px;}
+#screen-live .dual-label .cam-name{font-size:29px;line-height:1.05;}
+#screen-live .dual-label .cam-place{font-size:23px;line-height:1.07;}

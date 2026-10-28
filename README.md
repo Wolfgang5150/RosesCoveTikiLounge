@@ -3,3 +3,7 @@ Rose's Cove Tiki Lounge v2.0
 Changes: screen-specific compact settings tabs; ticker text & size persistent in Chrome; adjustable two camera captions; eight supplied YouTube IDs in pairs.
 Sources are user-supplied links; YouTube may still block embedding or a livestream may be offline.
 To publish: upload full archive contents (not ZIP) to GitHub repository root.
+
+
+## v2.1
+Screen 2 only: replaced background with supplied 1080x1920 artwork, aligned both video mounts to black panels, and aligned captions to the two wooden plaques. Caption offset settings and all other scripts remain unchanged.
