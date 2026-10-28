@@ -67,3 +67,6 @@ Removed Screen 1 menu auto-shrink/clamping and CSS overflow clipping. Fonts main
 - Screen 2: supplied portrait artwork, two simultaneous sources, two location plaques, next pair on each screen entry; existing weather updater retained.
 - Webcam embed audit: Maui Sands and Banzai Pipeline have directly identifiable YouTube player IDs. Six remaining sources are their supplied GeoWebcams pages, whose embed permissions and raw IDs could not be verified. Such pages may be blocked in iframes; these entries require later direct video ID verification.
 - Screen 3 and menu settings unchanged.
+
+
+v1.9: Screen 1 ticker text-size slider (saved locally; 18–90px). Screen 2 captions split into name and location lines. Version label reduced 30%. GeoWebcams pages that reject iframe embedding now show a friendly fallback and open-source link, rather than a broken framed page. Only direct YouTube IDs already in source are embedded. Direct player IDs for other six feeds remain unverified; opening their page works, but that does not guarantee embeddability.

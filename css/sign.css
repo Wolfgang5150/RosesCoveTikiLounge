@@ -123,3 +123,17 @@
 #screen-live .weather-info strong{font-size:34px;}
 #screen-live .weather-info #weather-temp{font-size:54px;}
 #screen-live .weather-info small{font-size:22px;margin-top:4px;}
+
+/* v1.9: two-line camera captions, 30% smaller version control, ticker size control */
+#version{font-size:14px;padding:7px 8px;}
+#screen-live .dual-label{flex-direction:column;gap:1px;line-height:1.03;white-space:nowrap;}
+#screen-live .dual-label .cam-name{display:block;font-size:29px;font-weight:900;}
+#screen-live .dual-label .cam-place{display:block;font-size:23px;font-weight:800;}
+#screen-live .dual-cam-fallback{display:flex;visibility:hidden;}
+#screen-live .dual-cam-fallback.visible{visibility:visible;}
+#screen-live .dual-cam-fallback strong{font-size:34px;}
+#screen-live .dual-cam-fallback a{pointer-events:auto;text-decoration:underline;}
+.ticker-tuning{border-top:2px solid #865224;margin-top:22px;padding-top:18px;}
+.ticker-tuning h3{font:700 27px Arial,sans-serif;color:#f2c281;margin:0 0 8px;}
+.ticker-tuning label{display:flex;gap:20px;align-items:center;}
+.ticker-tuning input[type=range]{width:340px;accent-color:#db9d4b;}
