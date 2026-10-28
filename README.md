@@ -31,3 +31,6 @@ v2.9: Screen 2 weather information (city, icon, temperature, condition) enlarged
 
 ## v2.9 Weather controls
 Screen 2 settings now include Weather size (50–180%, uniform), horizontal (±200px), and vertical (±150px) with a reset button. Adjustments preview immediately and persist with Save & Close. The 1080×1920 canvas and other screens remain unchanged.
+
+## v3.0
+Halved the baseline Screen 2 weather icon, city, temperature and condition font sizes. Existing weather size/position slider ranges and controls are unchanged, as are saved browser preferences. Refresh browser to load updated stylesheet.
