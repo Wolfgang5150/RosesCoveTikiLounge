@@ -26,3 +26,9 @@ v0.3 update: screen 1 now uses assets/rose_cove_night_background.png as its full
 
 ## v0.4
 Screen 1 only: removed artificial menu overlay and header/notice. Food and Drinks retain their spreadsheet-fed IDs, with transparent painted-text styling over the built-in wooden sign. Screen 2/3, JavaScript, assets, ticker and settings are unchanged except the visible version number.
+
+
+## v0.5 update
+- Screen 1 only: date/time hidden (clock DOM node retained for script compatibility).
+- Screen 1 menu moved inward and tightened to stay inside painted-wood panel: smaller type, narrower columns, tighter line spacing.
+- Other screen elements, data feeds, and JavaScript remain byte-for-byte unchanged from v0.4.
