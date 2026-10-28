@@ -1,12 +1,7 @@
-Rose’s Cove Tiki Lounge — v2.3
+# Rose’s Cove Tiki Lounge — v2.4
 
-Upload all extracted files to the GitHub Pages repository root, preserving folders.
+Complete static website for GitHub Pages. Keep `index.html` at the repository root.
 
-Changes from v2.2:
-- Screen 2 background replaced with the supplied natural-color 1080 × 1920 artwork.
-- Screen 2 YouTube player frames display at 800 × 450 (true 16:9), centered and clipped by the EXISTING 760-pixel-wide video windows; no image/video stretching.
-- Version label styled consistently as the single global bottom-right control on all three screens.
-- HTML stylesheet cache key and version label updated to v2.3.
+Changes from v2.3: Screen 2 settings have independent top and bottom video horizontal/vertical position, proportional zoom, and four crop-edge sliders. Changes preview live, Save & Close persists in browser storage, close without saving rolls back, and each player has an independent reset. Optional alignment guides display during Screen 2 settings. The background, camera list, wooden captions, and other screens remain unchanged.
 
-NO changes to camera coordinates, captions, JS, feeds, menus, or settings.
-Note: Actual YouTube video content can itself contain encoded letterboxing, which CSS cannot remove selectively.
+Select Screen 2 in the hidden settings to navigate to the camera page and adjust the feeds. The crop controls trim the video viewport, so increasing crop values may expose the original black artwork underneath. Zoom uniformly to fill the video windows. Third-party video content can still contain encoded black bars.

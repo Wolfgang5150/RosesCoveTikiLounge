@@ -202,3 +202,23 @@
 }
 /* A single global version control appears in the same position and style on every screen. */
 #version{font-family:Arial,sans-serif;font-size:14px;font-weight:400;padding:7px 8px;}
+
+/* v2.4: separate live video positioning/zoom/crop; background and captions untouched. */
+#screen-live .dual-cam-player{clip-path:inset(var(--video-crop-top,0px) var(--video-crop-right,0px) var(--video-crop-bottom,0px) var(--video-crop-left,0px));}
+#screen-live .dual-cam-player iframe{
+ width:800px!important;height:450px!important;
+ transform:translate(calc(-50% + var(--video-shift-x,0px)),calc(-50% + var(--video-shift-y,0px))) scale(var(--video-zoom,1))!important;
+ transform-origin:center center!important;
+}
+#settings .video-tuning{border-top:1px solid #8d6035;margin-top:12px;padding-top:8px;}
+#settings .video-tuning-tabs{display:flex;gap:8px;margin:6px 0;}
+#settings .video-tuning-tabs button{flex:1;background:#291d10;color:#f0cd9c;border:1px solid #9a6f39;}
+#settings .video-tuning-tabs button.active{background:#8f5120;color:white;}
+#settings .video-slider-row{display:flex;align-items:center;justify-content:space-between;}
+#settings .video-slider-row span{min-width:250px;}
+#settings .video-slider-row output{font-variant-numeric:tabular-nums;color:#ffc980;}
+#settings .video-tuning-actions{display:flex;align-items:center;justify-content:space-between;gap:8px;}
+#settings .video-guides-toggle{display:flex;align-items:center;gap:8px;}
+#screen-live.video-guides .dual-cam::after{content:'';position:absolute;inset:0;border:3px dashed rgba(55,255,235,.8);z-index:6;pointer-events:none;}
+#screen-live.video-guides[data-tuning-video="0"] .cam-b::after,
+#screen-live.video-guides[data-tuning-video="1"] .cam-a::after{border-color:rgba(255,255,255,.35);border-width:1px;}
