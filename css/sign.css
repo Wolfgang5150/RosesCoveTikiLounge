@@ -185,3 +185,20 @@
 #screen-live .dual-label-b{top:1475px;}
 #screen-live .dual-label .cam-name{font-size:29px;line-height:1.06;}
 #screen-live .dual-label .cam-place{font-size:23px;line-height:1.08;}
+
+
+/* v2.3: proportional YouTube 16:9 cover INSIDE the existing Screen 2 windows.
+   The windows and their labels have not moved; crop surplus video, never stretch. */
+#screen-live .dual-cam-player{position:absolute;inset:0;overflow:hidden;}
+#screen-live .dual-cam-player iframe{
+  position:absolute!important;
+  left:50%!important;
+  top:50%!important;
+  width:800px!important;
+  height:450px!important;
+  transform:translate(-50%,-50%)!important;
+  border:0!important;
+  display:block;
+}
+/* A single global version control appears in the same position and style on every screen. */
+#version{font-family:Arial,sans-serif;font-size:14px;font-weight:400;padding:7px 8px;}
