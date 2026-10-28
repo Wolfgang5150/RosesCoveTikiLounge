@@ -16,7 +16,7 @@
 #viewport:fullscreen{width:100vw;height:100vh;background:#000}
 
 /* v0.8: Screen 1 menu only. Single section displayed within the unobstructed wood. */
-#screen-menu .menu-board {top:1235px; left:240px; right:240px; bottom:auto; height:440px; padding:0; overflow:hidden; background:none; border:0; box-shadow:none;}
+#screen-menu .menu-board {top:1283px; left:240px; right:240px; bottom:auto; height:440px; padding:0; overflow:hidden; background:none; border:0; box-shadow:none;}
 #screen-menu .menu-columns {display:block; position:relative; width:100%; height:100%;}
 #screen-menu .menu-panel {position:absolute; inset:0; box-sizing:border-box; padding:0 4px; margin:0; overflow:hidden; opacity:0; visibility:hidden; transition:opacity .45s ease,visibility .45s ease;}
 #screen-menu .menu-panel.menu-active {opacity:1; visibility:visible;}

@@ -13,3 +13,11 @@ Upload extracted ZIP contents to the root of your GitHub Pages repository.
 - Menu uses heavier lettering and auto-fits populated spreadsheet entries.
 - CSS and main JS query strings updated to avoid stale cache.
 - Screens 2 and 3 markup, camera/weather/trivia data and assets are unchanged from v0.7.
+
+## v0.9 — Default menu entries
+The five default Drinks and five default Food entries are shown immediately and used if the relevant published Google Sheet is unavailable or empty. When spreadsheet data is available, it replaces the fallback defaults, as in previous versions. No other screen behavior or geometry was changed.
+
+## v1.0 — Screen 1 vertical positioning
+- Moved only the menu-board down by 48 design pixels (1235px to 1283px).
+- Updated the stylesheet query parameter to prevent stale CSS caching, and visible version label to v1.0.
+- All other layout rules, scripts, assets and feeds are unchanged.
