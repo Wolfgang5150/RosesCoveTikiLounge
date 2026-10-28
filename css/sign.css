@@ -58,3 +58,21 @@
   overflow-y:auto; overscroll-behavior:contain;
   pointer-events:auto; padding:24px 32px;
 }
+
+/* v1.5 — Only Screen 1 menu: slider-led sizing and vertical placement.
+   Remove prior width/height clipping and forced wrapping. No disproportionate scaling. */
+#screen-menu .menu-board,
+#screen-menu .menu-columns,
+#screen-menu .menu-panel,
+#screen-menu .menu-items { overflow:visible; max-height:none; }
+#screen-menu .menu-panel { padding-top:40px; }
+#screen-menu .menu-panel h2 { white-space:nowrap; }
+#screen-menu .menu-items { overflow-wrap:normal; word-break:normal; }
+#screen-menu .menu-items .menu-entry {
+  width:max-content;
+  max-width:none;
+  white-space:nowrap;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}

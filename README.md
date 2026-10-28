@@ -43,3 +43,7 @@ The four-item menu defaults were already correct in v1.1 HTML and JS, but index.
 - Settings are constrained to the upper 960 px of the fixed 1080×1920 design canvas.
 - The settings content scrolls internally; the lower menu stays uncovered for live visual tuning.
 - Existing sliders and save behavior unchanged; other screens and files unchanged.
+
+
+## v1.5 — Menu slider authority
+Removed Screen 1 menu auto-shrink/clamping and CSS overflow clipping. Fonts maintain natural proportions. Menu sizing and vertical offset are now controlled directly by the separate Drinks/Food sliders; long text may extend beyond the wooden panel or canvas (by design). All other screens remain unchanged.
