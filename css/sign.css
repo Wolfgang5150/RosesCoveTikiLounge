@@ -238,3 +238,7 @@
 #settings .settings-title { cursor:grab; user-select:none; touch-action:none; }
 #settings .settings-title:active { cursor:grabbing; }
 #settings .settings-title button { cursor:pointer; touch-action:auto; }
+
+/* v2.7: Scale each camera name and location together; natural font aspect ratios. */
+#screen-live .dual-label .cam-name{font-size:var(--cam-caption-name-size,29px);}
+#screen-live .dual-label .cam-place{font-size:var(--cam-caption-place-size,23px);}

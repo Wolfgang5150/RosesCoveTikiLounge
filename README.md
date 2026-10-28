@@ -17,3 +17,10 @@ Select Screen 2 in the hidden settings to navigate to the camera page and adjust
 - Removed the translucent background from the lower-right version button on all screens.
 - Drag the SETTINGS title bar to move the settings sheet anywhere within the 1080×1920 canvas. Position is remembered on this browser.
 - Settings controls, save/cancel behavior, video feeds, and screens otherwise unchanged.
+
+
+## v2.7
+- Screen 2: independent upper/lower camera-caption text-size sliders (60–170%).
+- Both caption lines scale in unison, retaining 29:23 size ratio with no horizontal or vertical stretching.
+- Immediate preview, Save & Close persistence and Cancel restoration via existing settings workflow.
+- All other screens, video frame/crop controls and source feeds unchanged.
