@@ -391,3 +391,51 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 #screen-trivia .tiki-stage{left:40px;top:28px;width:1000px;height:1395px;filter:drop-shadow(16px 25px 24px rgba(0,0,0,.75));}
 #screen-trivia #tiki-rig {filter:drop-shadow(-6px 1px 17px rgba(255,143,44,.18));}
 #screen-trivia #tiki-rig .eye-ball,#screen-trivia #tiki-rig .moving-brow,#screen-trivia #tiki-rig .sliding-lid,#screen-trivia #tiki-rig #tiki-jaw {filter:drop-shadow(4px 7px 6px rgba(15,6,2,.75));}
+
+
+/* v3.9: clean up screen-three proportions, preserve round moon, and tighten tiki motion */
+#screen-trivia{
+  background-image:url("../assets/tiki_volcano_only.jpg");
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+#screen-trivia .tiki-stage{
+  left:122px;
+  top:96px;
+  width:836px;
+  height:1170px;
+  filter:drop-shadow(0 18px 30px rgba(0,0,0,.82)) drop-shadow(0 0 16px rgba(255,126,37,.18));
+}
+#screen-trivia #tiki-rig{
+  filter:none;
+}
+#screen-trivia #tiki-rig .eye-ball,
+#screen-trivia #tiki-rig .moving-brow,
+#screen-trivia #tiki-rig .sliding-lid,
+#screen-trivia #tiki-rig #tiki-jaw{
+  filter:drop-shadow(2px 4px 6px rgba(12,5,2,.68));
+}
+#screen-trivia .trivia-overlay{
+  background:linear-gradient(180deg,rgba(0,0,0,.01) 0%,rgba(0,0,0,0) 58%,rgba(0,0,0,.05) 100%);
+}
+#screen-trivia .fact-card{
+  left:84px;
+  right:84px;
+  bottom:64px;
+  height:250px;
+  padding:14px 30px 18px;
+  gap:8px;
+}
+#screen-trivia .fact-type{
+  font-size:24px;
+  letter-spacing:4px;
+}
+#screen-trivia .fact-content{
+  font-size:42px;
+  line-height:1.08;
+  max-width:840px;
+}
+#screen-trivia .fact-foot{
+  font-size:22px;
+}
