@@ -364,3 +364,15 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
   color:#ffd9a3;
   text-shadow:0 2px 5px rgba(0,0,0,.9);
 }
+
+/* v3.5 — genuine layered SVG tiki rig, over preserved original volcano / lava scenery. */
+#screen-trivia .tiki-stage{position:absolute;left:85px;top:15px;width:910px;height:1450px;z-index:2;filter:drop-shadow(17px 18px 22px rgba(0,0,0,.8));}
+#screen-trivia #tiki-rig{display:block;width:100%;height:100%;overflow:visible;}
+#screen-trivia #tiki-rig .sliding-lid,#screen-trivia #tiki-rig .moving-brow,#screen-trivia #tiki-rig .eye-ball,#screen-trivia #tiki-rig #tiki-jaw{transition:transform 340ms cubic-bezier(.22,.7,.2,1);will-change:transform;}
+#screen-trivia #tiki-rig #tiki-jaw{transition-duration:400ms;}
+#screen-trivia .trivia-overlay{pointer-events:none;z-index:4;}
+#screen-trivia .fact-card{bottom:45px;height:315px;}
+#settings .tiki-controls{border-top:1px solid #a8793a;margin-top:15px;padding-top:10px;}
+#settings .tiki-expression-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+#settings .tiki-expression-buttons button{padding:8px 3px;font-size:15px;}
+#settings .tiki-expression-buttons button.active{background:#a46a22;border-color:#efbf79;color:#fff;}
