@@ -386,3 +386,8 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 #screen-trivia {background-image:url("../assets/tiki_volcano_only.jpg");background-size:100% 100%;}
 #screen-trivia #tiki-rig image {pointer-events:none;}
 #screen-trivia .tiki-stage {left:90px;top:30px;width:900px;height:1415px;}
+
+/* v3.8: Separate photorealistic raster sprite cut from the approved carved-wood concept asset sheet. */
+#screen-trivia .tiki-stage{left:40px;top:28px;width:1000px;height:1395px;filter:drop-shadow(16px 25px 24px rgba(0,0,0,.75));}
+#screen-trivia #tiki-rig {filter:drop-shadow(-6px 1px 17px rgba(255,143,44,.18));}
+#screen-trivia #tiki-rig .eye-ball,#screen-trivia #tiki-rig .moving-brow,#screen-trivia #tiki-rig .sliding-lid,#screen-trivia #tiki-rig #tiki-jaw {filter:drop-shadow(4px 7px 6px rgba(15,6,2,.75));}
