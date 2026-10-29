@@ -37,3 +37,6 @@ Halved the baseline Screen 2 weather icon, city, temperature and condition font 
 
 ## v3.1
 Screen 2 weather readout is center anchored and automatically fits within a strict 25% inset on every edge of the translucent weather-card (inner 50% rectangle). The existing uniform scale and X/Y sliders remain, but their effective adjustments are safely bounded. New weather text automatically refits whenever the forecast changes. Other screens unchanged.
+
+
+v3.2: weather icon/location anchored 24px from the left edge; temperature anchored 24px from right edge. Proportional scaling moves both inward; vertical positioning retained. Horizontal movement locked because it conflicts with fixed edge anchoring.

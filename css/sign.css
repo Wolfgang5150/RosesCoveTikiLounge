@@ -283,3 +283,24 @@
 }
 #screen-live .weather-info > div{flex:none;min-width:0;}
 #screen-live .weather-info strong,#screen-live .weather-info small{white-space:nowrap;}
+
+/* v3.2 — edge-anchored weather groups. Both outside anchors stay 24px
+   inside the panel; all size changes grow toward its center. */
+#screen-live .weather-info{
+ position:absolute;left:24px;right:24px;top:50%;width:auto;height:120px;
+ margin:0;display:block;white-space:nowrap;
+ transform:translateY(calc(-50% + var(--weather-offset-y,0px)));
+ transform-origin:center;overflow:visible;
+}
+#screen-live .weather-info .weather-left{
+ position:absolute;left:0;top:50%;display:flex;align-items:center;gap:15px;
+ width:max-content;max-width:none;
+ transform:translateY(-50%) scale(var(--weather-fit-scale,1));
+ transform-origin:left center;
+}
+#screen-live .weather-info .weather-copy{flex:none;min-width:0;}
+#screen-live .weather-info #weather-temp{
+ position:absolute;right:0;top:50%;display:block;flex:none;
+ transform:translateY(-50%) scale(var(--weather-fit-scale,1));
+ transform-origin:right center;
+}
