@@ -304,3 +304,63 @@
  transform:translateY(-50%) scale(var(--weather-fit-scale,1));
  transform-origin:right center;
 }
+
+/* v3.3 — remove Live Conditions label, hide cursor in fullscreen,
+   and introduce the new Screen 3 tiki oracle mockup. */
+body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
+#screen-live .weather-head{justify-content:flex-start;}
+#screen-live #weather-position{display:none;}
+
+#screen-trivia{
+  padding:0;
+  background:#060303 url("../assets/tiki_oracle_screen3.png") center center / cover no-repeat;
+}
+#screen-trivia .trivia-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.02) 0%,rgba(0,0,0,0) 58%,rgba(0,0,0,.08) 100%);
+}
+#screen-trivia .fact-card{
+  position:absolute;
+  left:72px;
+  right:72px;
+  bottom:36px;
+  height:320px;
+  min-height:0;
+  padding:26px 40px 22px;
+  background:transparent;
+  border:none;
+  border-radius:0;
+  box-shadow:none;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  text-align:center;
+}
+#screen-trivia .fact-type{
+  font-family:"Barlow Semi Condensed",Arial,sans-serif;
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:4px;
+  color:#ffc87a;
+  text-shadow:0 2px 6px rgba(0,0,0,.9),0 0 14px rgba(255,106,0,.25);
+}
+#screen-trivia .fact-content{
+  font-family:"Barlow Semi Condensed",Arial,sans-serif;
+  font-size:46px;
+  line-height:1.12;
+  font-weight:800;
+  color:#fff1d6;
+  text-shadow:0 3px 7px rgba(0,0,0,.95),0 0 18px rgba(0,0,0,.42);
+  max-width:860px;
+}
+#screen-trivia .fact-foot{
+  font-family:"Barlow Semi Condensed",Arial,sans-serif;
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:#ffd9a3;
+  text-shadow:0 2px 5px rgba(0,0,0,.9);
+}

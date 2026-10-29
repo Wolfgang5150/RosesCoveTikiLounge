@@ -10,6 +10,7 @@
     button.setAttribute('aria-label',active?'Exit full screen':'Enter full screen');
     button.title=active?'Exit full screen (Esc)':'Enter full screen';
     icon.textContent=active?'⤢':'⛶';
+    document.body.classList.toggle('fullscreen-active',active);
     window.dispatchEvent(new Event('resize'));
   }
   button.addEventListener('click',async()=>{
