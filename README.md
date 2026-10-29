@@ -28,3 +28,8 @@ v4.1 notes
 - Screen 3 background now uses an explicit portrait image layer to preserve the moon and scenery proportions.
 - Screen 3 eye and mouth motion are clipped to carved openings to reduce visible seams and spillover.
 - Screen 3 tiki idle eye motion now preserves mood pose instead of overwriting it.
+
+v4.2 notes
+- Replaced Screen 3 volcano background asset with a corrected moon.
+- Locked Screen 3 background rendering to the asset's exact native 1080x1920 dimensions.
+- Removed Screen 3 internal padding from the background render path to prevent any remaining distortion.

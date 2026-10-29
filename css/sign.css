@@ -467,3 +467,23 @@ body.fullscreen-active #fullscreen-toggle { opacity:0; pointer-events:none; }
 #screen-trivia .fact-type{font-size:24px;letter-spacing:4px;}
 #screen-trivia .fact-content{font-size:42px;line-height:1.08;max-width:840px;}
 #screen-trivia .fact-foot{font-size:22px;}
+
+
+/* v4.2 — Screen 3 background lock: zero internal stretch, exact native portrait size. */
+#screen-trivia{padding:0 !important;background:none !important;overflow:hidden;}
+#screen-trivia::before{display:none !important;}
+#screen-trivia .screen3-background{
+  position:absolute;
+  left:0; top:0;
+  width:1080px !important;
+  height:1920px !important;
+  min-width:1080px;
+  min-height:1920px;
+  max-width:none;
+  max-height:none;
+  object-fit:fill; /* safe because source asset is already exactly 1080×1920 */
+  object-position:left top;
+  transform:none !important;
+  pointer-events:none;
+  z-index:0;
+}
