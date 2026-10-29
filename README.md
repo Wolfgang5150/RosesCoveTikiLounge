@@ -13,3 +13,13 @@ Files:
 - index.html
 - css/sign.css
 - js/sign-v3.9.js
+
+
+## v4.0 — Screen 3 repair pass
+- Screens 1 and 2 and their JavaScript settings logic are unchanged.
+- Screen 3 native artwork and SVG sprite viewBox preserve the 800:1120 ratio, with no anisotropic sprite scaling.
+- Reduced heavy per-part drop shadows and extreme jaw/brow movements that exaggerate visible piece edges.
+- Adjusted normal eyelid pose to show more of the eyes; added a suspicious expression.
+- Fullscreen cursor is hidden.
+- v3.9 source remains in the package for rollback.
+- Existing asset artwork is retained; hand-cleaning/painting original sprite seams remains an artistic improvement beyond this stabilization pass.

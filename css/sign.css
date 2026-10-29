@@ -439,3 +439,14 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 #screen-trivia .fact-foot{
   font-size:22px;
 }
+
+/* v4.0 — Screen 3 only: exact intrinsic ratios and contained modular rig. */
+#screen-trivia { background-size:cover; background-position:center center; }
+#screen-trivia .tiki-stage { width:836px; height:1170.4px; }
+#screen-trivia #tiki-rig { overflow:visible; }
+#screen-trivia #tiki-rig .eye-ball,
+#screen-trivia #tiki-rig .moving-brow,
+#screen-trivia #tiki-rig .sliding-lid,
+#screen-trivia #tiki-rig #tiki-jaw { filter:drop-shadow(1px 2px 2px rgba(12,5,2,.36)); }
+body.fullscreen-active { cursor:none; }
+body.fullscreen-active #fullscreen-toggle { opacity:0; pointer-events:none; }
