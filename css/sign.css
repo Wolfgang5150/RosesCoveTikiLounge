@@ -376,3 +376,8 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 #settings .tiki-expression-buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
 #settings .tiki-expression-buttons button{padding:8px 3px;font-size:15px;}
 #settings .tiki-expression-buttons button.active{background:#a46a22;border-color:#efbf79;color:#fff;}
+
+/* v3.6: distinct character and scene, moveable components carry wood texture. */
+#screen-trivia{background-image:url("../assets/tiki_scene_no_character.jpg");background-size:100% 100%;}
+#screen-trivia .tiki-stage{filter:drop-shadow(24px 24px 32px rgba(0,0,0,.85));}
+#screen-trivia #tiki-rig{filter:drop-shadow(-7px -3px 10px rgba(248,139,44,.23));}
