@@ -23,3 +23,8 @@ Files:
 - Fullscreen cursor is hidden.
 - v3.9 source remains in the package for rollback.
 - Existing asset artwork is retained; hand-cleaning/painting original sprite seams remains an artistic improvement beyond this stabilization pass.
+
+v4.1 notes
+- Screen 3 background now uses an explicit portrait image layer to preserve the moon and scenery proportions.
+- Screen 3 eye and mouth motion are clipped to carved openings to reduce visible seams and spillover.
+- Screen 3 tiki idle eye motion now preserves mood pose instead of overwriting it.

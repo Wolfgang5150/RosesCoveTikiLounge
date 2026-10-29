@@ -450,3 +450,20 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 #screen-trivia #tiki-rig #tiki-jaw { filter:drop-shadow(1px 2px 2px rgba(12,5,2,.36)); }
 body.fullscreen-active { cursor:none; }
 body.fullscreen-active #fullscreen-toggle { opacity:0; pointer-events:none; }
+
+
+/* v4.1 — Screen 3 only: explicit no-stretch background image and clipped animated openings. */
+#screen-trivia{background:none !important;overflow:hidden;}
+#screen-trivia .screen3-background{position:absolute;inset:0;z-index:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center center;pointer-events:none;}
+#screen-trivia .trivia-overlay{position:absolute;inset:0;z-index:4;pointer-events:none;}
+#screen-trivia .tiki-stage{left:121px;top:99px;width:838px;height:1173px;z-index:2;filter:drop-shadow(0 16px 28px rgba(0,0,0,.82)) drop-shadow(0 0 12px rgba(255,126,37,.12));}
+#screen-trivia #tiki-rig{display:block;width:100%;height:100%;overflow:visible;filter:none;}
+#screen-trivia #tiki-rig .eye-ball,
+#screen-trivia #tiki-rig .moving-brow,
+#screen-trivia #tiki-rig .sliding-lid,
+#screen-trivia #tiki-rig #tiki-jaw{filter:none;transition:transform 300ms cubic-bezier(.22,.7,.2,1);will-change:transform;}
+#screen-trivia #tiki-rig #tiki-jaw{transition-duration:360ms;}
+#screen-trivia .fact-card{left:84px;right:84px;bottom:64px;height:250px;padding:14px 30px 18px;gap:8px;}
+#screen-trivia .fact-type{font-size:24px;letter-spacing:4px;}
+#screen-trivia .fact-content{font-size:42px;line-height:1.08;max-width:840px;}
+#screen-trivia .fact-foot{font-size:22px;}
