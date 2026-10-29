@@ -1,7 +1,9 @@
-# Rose’s Cove Tiki Lounge v3.6
+# Rose’s Cove Tiki Lounge — v3.7 Halloween build
 
-Screen 3: Textured wooden SVG character rig. Face body, independent brows, sliding eyelids, and hinged jaw use moving wood-texture patterns, not flat fills. The separate scenic background has the prior stationary tiki removed/repainted in the main face region while retaining the volcano and lava message board.
+Deploy the contents of this ZIP to the GitHub Pages site root. Open index.html to preview.
 
-Animation functionality and emotion controls are preserved from v3.5. This is a textured procedural art pass, not photorealistic cut-out art: inspect the result in your target Chrome display. Screens 1 and 2 remain unchanged.
+- Screen 3 now uses **eight actual transparent PNG layers**, individually rasterized from the textured 3.6 head: fixed face, two eyes, two lids, two brows, and articulated jaw. They are stacked and transformed separately by the existing JavaScript expression and blinking system. SVG is retained solely as the coordinate container.
+- **Background replaced:** a standalone volcano/lava scene without a second tiki or the blurred rectangle from 3.6. The bottom lava-rock wisdom board is retained from 3.3.
+- Same v3.6 expression buttons, idle animation, trivia/jaw movement, screen rotation, and Screen 1/2 functionality. Previous browser settings preserved.
 
-Upload all files to the root of your GitHub Pages repository.
+Important: the raster layers still inherit the stylized source carving of v3.6 and are not yet photoreal 3D-rendered components. This is a substantial asset separation step, not the final art quality.
