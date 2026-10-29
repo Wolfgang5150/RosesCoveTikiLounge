@@ -33,3 +33,6 @@ v4.2 notes
 - Replaced Screen 3 volcano background asset with a corrected moon.
 - Locked Screen 3 background rendering to the asset's exact native 1080x1920 dimensions.
 - Removed Screen 3 internal padding from the background render path to prevent any remaining distortion.
+
+
+v4.3 — corrected moon geometry in Screen 3 background source, while keeping the Screen 3 portrait image at native 1080×1920 without nonuniform CSS scaling. No Screen 1 / 2 changes.
