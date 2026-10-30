@@ -34,5 +34,20 @@ v4.2 notes
 - Locked Screen 3 background rendering to the asset's exact native 1080x1920 dimensions.
 - Removed Screen 3 internal padding from the background render path to prevent any remaining distortion.
 
+v4.4 notes
+- Rebuilt Screen 3 background with new 1080x1920 portrait volcanic tiki scene and a larger stone slate for trivia text.
+- Rebuilt the Screen 3 tiki rig using the assets_v39_clean part set so the eyes are clearly visible.
+- Screen 3 now uses independent animated eyebrows, visible eyeballs, sliding lids, and a hinged lower jaw.
+- Increased the trivia card height to allow more room for future sayings and trivia.
 
-v4.3 — corrected moon geometry in Screen 3 background source, while keeping the Screen 3 portrait image at native 1080×1920 without nonuniform CSS scaling. No Screen 1 / 2 changes.
+v4.5 notes
+- Rebuilt Screen 3 again as a full-scene random "Tiki Oracle" using 10 diverse background/face compositions.
+- Removed the old layered puppet rig from Screen 3 and replaced it with a random full-image scene that stays fixed for the duration of each Screen 3 visit.
+- Added 7 topic pools with 20 entries each: Tiki Jokes, Island Trivia, Fun Facts, Weird Island Facts, Hawaiian History, Polynesian Island Life, and Pacific Pirate Life.
+- Added Screen 3 slider controls for message text size, category label size, line spacing, text box X/Y position, and text box width/height.
+- Added a Screen 3 reset button and a "Load Another Random Screen 3 Now" preview button.
+- Added SCREEN3_TOPIC_LIBRARY_v4.5.md so the full message library is easy to review outside the sign.
+- Updated visible version number to v4.5 and moved settings persistence to a new localStorage key for a cleaner upgrade.
+
+
+v4.5 Lean deployment: contains only current web dependencies; archived development layers and preview images excluded. Ten oracle PNGs converted to high-quality JPG at native 1080×1920, without geometric distortion.

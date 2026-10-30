@@ -313,7 +313,7 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 
 #screen-trivia{
   padding:0;
-  background:#060303 url("../assets/tiki_oracle_screen3.png") center center / cover no-repeat;
+  background:#060303 none center center / cover no-repeat;
 }
 #screen-trivia .trivia-overlay{
   position:absolute;
@@ -378,12 +378,12 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 #settings .tiki-expression-buttons button.active{background:#a46a22;border-color:#efbf79;color:#fff;}
 
 /* v3.6: distinct character and scene, moveable components carry wood texture. */
-#screen-trivia{background-image:url("../assets/tiki_scene_no_character.jpg");background-size:100% 100%;}
+#screen-trivia{background-image:none;background-size:100% 100%;}
 #screen-trivia .tiki-stage{filter:drop-shadow(24px 24px 32px rgba(0,0,0,.85));}
 #screen-trivia #tiki-rig{filter:drop-shadow(-7px -3px 10px rgba(248,139,44,.23));}
 
 /* v3.7 — only character-free volcano scenery under separately animated transparent PNG components. */
-#screen-trivia {background-image:url("../assets/tiki_volcano_only.jpg");background-size:100% 100%;}
+#screen-trivia {background-image:none;background-size:100% 100%;}
 #screen-trivia #tiki-rig image {pointer-events:none;}
 #screen-trivia .tiki-stage {left:90px;top:30px;width:900px;height:1415px;}
 
@@ -395,7 +395,7 @@ body.fullscreen-active, body.fullscreen-active * { cursor:none !important; }
 
 /* v3.9: clean up screen-three proportions, preserve round moon, and tighten tiki motion */
 #screen-trivia{
-  background-image:url("../assets/tiki_volcano_only.jpg");
+  background-image:none;
   background-size:cover;
   background-position:center center;
   background-repeat:no-repeat;
@@ -487,3 +487,94 @@ body.fullscreen-active #fullscreen-toggle { opacity:0; pointer-events:none; }
   pointer-events:none;
   z-index:0;
 }
+
+
+/* v4.4 — rebuilt Screen 3 with new background art, larger slate, and visible eyes. */
+#screen-trivia{padding:0 !important;background:none !important;overflow:hidden;}
+#screen-trivia::before{display:none !important;}
+#screen-trivia .screen3-background{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:fill;object-position:left top;z-index:0;pointer-events:none;}
+#screen-trivia .tiki-stage{position:absolute;left:257px;top:122px;width:567px;height:1053px;z-index:2;filter:drop-shadow(0 24px 42px rgba(0,0,0,.75));}
+#screen-trivia .tiki-rig-v44{position:absolute;left:0;top:0;width:420px;height:780px;transform:scale(1.35);transform-origin:top left;}
+#screen-trivia .tiki-base,#screen-trivia .eye,#screen-trivia .lid,#screen-trivia .brow,#screen-trivia .jaw{position:absolute;display:block;user-select:none;-webkit-user-drag:none;}
+#screen-trivia .tiki-base{left:0;top:0;width:420px;height:780px;}
+#screen-trivia .eye-clip{position:absolute;overflow:hidden;border-radius:50%;z-index:2;}
+#screen-trivia .eye-clip-left{left:60px;top:208px;width:123px;height:124px;}
+#screen-trivia .eye-clip-right{left:232px;top:208px;width:123px;height:124px;}
+#screen-trivia .eye{z-index:2;filter:drop-shadow(0 3px 4px rgba(0,0,0,.55));}
+#screen-trivia .eye-left{left:-2px;top:-3px;width:139px;height:152px;transform-origin:50% 50%;}
+#screen-trivia .eye-right{left:-14px;top:-4px;width:152px;height:152px;transform-origin:50% 50%;}
+#screen-trivia .lid{z-index:3;left:-8px;top:-25px;transform-origin:50% 12%;}
+#screen-trivia .lid-left{width:164px;height:136px;}
+#screen-trivia .lid-right{width:166px;height:134px;left:-18px;}
+#screen-trivia .brow{z-index:5;transform-origin:50% 86%;}
+#screen-trivia .brow-left{left:68px;top:134px;width:141px;height:94px;}
+#screen-trivia .brow-right{left:214px;top:128px;width:151px;height:103px;}
+#screen-trivia .mouth-clip{position:absolute;left:16px;top:438px;width:388px;height:305px;overflow:hidden;z-index:2;border-radius:0 0 80px 80px / 0 0 60px 60px;}
+#screen-trivia .jaw{left:0;top:0;width:387px;height:341px;transform-origin:50% 12%;z-index:2;}
+#screen-trivia .trivia-overlay{position:absolute;inset:0;z-index:4;pointer-events:none;}
+#screen-trivia .fact-card{left:78px;right:78px;bottom:38px;height:338px;padding:20px 34px 26px;background:linear-gradient(180deg,rgba(46,28,17,.92),rgba(25,14,8,.96));border:10px ridge #995f2c;border-radius:28px;box-shadow:0 24px 44px rgba(0,0,0,.8);display:flex;flex-direction:column;justify-content:flex-start;gap:10px;}
+#screen-trivia .fact-type{font:700 24px Arial,sans-serif;color:#ffd38b;letter-spacing:4px;}
+#screen-trivia .fact-content{font-size:40px;line-height:1.15;color:#fff1cf;max-width:100%;flex:1;display:flex;align-items:center;justify-content:center;text-align:center;}
+#screen-trivia .fact-foot{font-size:22px;color:#f5b66e;text-align:center;}
+
+/* v4.5 — Screen 3 becomes a rotating full-scene tiki oracle with configurable text box. */
+#screen-trivia{padding:0 !important;background:none !important;overflow:hidden;}
+#screen-trivia::before{display:none !important;}
+#screen-trivia .oracle-scene{
+  position:absolute;
+  left:0;top:0;
+  width:1080px;height:1920px;
+  object-fit:fill;
+  object-position:left top;
+  z-index:0;
+  pointer-events:none;
+}
+#screen-trivia .oracle-textbox{
+  position:absolute;
+  left:130px;
+  top:1440px;
+  width:820px;
+  height:350px;
+  z-index:5;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  text-align:center;
+  padding:18px 26px 22px;
+  overflow:hidden;
+  pointer-events:none;
+}
+#screen-trivia .fact-type{
+  width:100%;
+  flex:0 0 auto;
+  font-family:"Barlow Semi Condensed",Arial,sans-serif;
+  font-size:24px;
+  font-weight:800;
+  letter-spacing:3px;
+  line-height:1.05;
+  color:#ffe1aa;
+  text-shadow:0 2px 6px rgba(0,0,0,.95),0 0 12px rgba(0,0,0,.5);
+  margin-bottom:10px;
+}
+#screen-trivia .fact-content{
+  width:100%;
+  flex:1 1 auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-family:"Barlow Semi Condensed",Arial,sans-serif;
+  font-size:44px;
+  font-weight:800;
+  line-height:1.08;
+  color:#fff4d8;
+  text-shadow:0 3px 8px rgba(0,0,0,.96),0 0 16px rgba(0,0,0,.45);
+  overflow:hidden;
+}
+#settings .oracle-tuning h3{font-size:23px;margin:8px 0;}
+#settings .oracle-tuning p{font-size:17px;margin:6px 0 10px;color:#ddc09c;}
+#settings .oracle-tuning label{font-size:19px;padding:6px 0;}
+#settings .oracle-tuning input[type=range]{width:210px;}
+#settings .oracle-tuning output{font-size:18px;}
+#settings .oracle-tuning button{font-size:18px;padding:8px 10px;margin-top:10px;display:block;width:100%;}
